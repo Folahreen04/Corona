@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Oando PLC, 2018 Well Work KPI">
+    <meta name="keywords" content="Oando PLC, KPI, Well, Work">
+    <meta name="author" content="">
+    <title>2018 Well Work KPI</title>
+    <link rel="apple-touch-icon" href="assets/images/logot.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logot.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors.css">
+    <!-- END VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/charts/c3.css">
+    <!-- BEGIN MODERN CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+    <!-- END MODERN CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/core/menu/menu-types/horizontal-menu.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/charts/jquery-jvectormap-2.0.3.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/charts/morris.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/core/colors/palette-gradient.css">
+    <!-- END Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/plugins/charts/c3-chart.css">
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <!-- END Custom CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/core/colors/palette-callout.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/pages/gallery.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/js/gallery/photo-swipe/photoswipe.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/js/gallery/photo-swipe/default-skin/default-skin.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.js" type="text/javascript"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js" type="text/javascript"></script> -->
+    <style>
+        .oando-gradient {
+            background-color: #fab800;
+            filter: progid: DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#fab800, endColorstr=#fa8c00);
+            background-image: -moz-linear-gradient(left, #fab800 7%, #fa8c00 25%, #de6b00 48%, #bf0026 66%, #212666 92%);
+            background-image: linear-gradient(left, #fab800 7%, #fa8c00 25%, #de6b00 48%, #bf0026 66%, #212666 92%);
+            background-image: -webkit-linear-gradient(left, #fab800 7%, #fa8c00 25%, #de6b00 48%, #bf0026 66%, #212666 92%);
+            background-image: -o-linear-gradient(left, #fab800 7%, #fa8c00 25%, #de6b00 48%, #bf0026 66%, #212666 92%);
+            background-image: -ms-linear-gradient(left, #fab800 7%, #fa8c00 25%, #de6b00 48%, #bf0026 66%, #212666 92%);
+            background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(7%, #fab800), color-stop(25%, #fa8c00), color-stop(48%, #de6b00), color-stop(66%, #bf0026), color-stop(92%, #212666));
+        }
+        
+        .header-navbar.navbar-brand-center .navbar-header {
+            top: 5%;
+            left: 45%;
+        }
+        
+        .brand-text {
+            font-size: 1.5em;
+        }
+        
+        .heartbeat {
+            -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+            animation: heartbeat 1.5s ease-in-out infinite both;
+        }
+        
+        @-webkit-keyframes heartbeat {
+            from {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: center center;
+                transform-origin: center center;
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out
+            }
+            10% {
+                -webkit-transform: scale(.91);
+                transform: scale(.91);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in
+            }
+            17% {
+                -webkit-transform: scale(.98);
+                transform: scale(.98);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out
+            }
+            33% {
+                -webkit-transform: scale(.87);
+                transform: scale(.87);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in
+            }
+            45% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out
+            }
+        }
+        
+        @keyframes heartbeat {
+            from {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: center center;
+                transform-origin: center center;
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out
+            }
+            10% {
+                -webkit-transform: scale(.91);
+                transform: scale(.91);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in
+            }
+            17% {
+                -webkit-transform: scale(.98);
+                transform: scale(.98);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out
+            }
+            33% {
+                -webkit-transform: scale(.87);
+                transform: scale(.87);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in
+            }
+            45% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out
+            }
+        }
+        
+        .font-small-0 {
+            font-size: 0.6em;
+        }
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        l .header-value {
+            color: #fa8c00;
+            font-size: 2em;
+            font-weight: 700;
+            display: inline-block;
+            float: right;
+        }
+        
+        .media-body h6 {
+            font-size: 1.7em !important;
+        }
+        
+        .media-body h3 {
+            font-size: 3.5em !important;
+        }
+        
+        .progress span {
+            position: relative;
+            left: 40%;
+            top: 2px;
+        }
+        
+        .align-items-stretch {
+            height: 100%;
+        }
+        
+        .callout-bordered {
+            height: 80px;
+        }
+        
+        .color-bullet ul {
+            list-style-type: none;
+        }
+        
+        .color-bullet ul li::before {
+            content: "\2022";
+            color: #FF8F50;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .texterq {
+            color: #FF8F50;
+            font-size: 1.2em;
+        }
+        
+        .texterb {
+            margin: 5px 0px;
+            font-size: 0.2em;
+        }
+        
+        .texterw {
+            color: #FF8F50;
+            font-size: 0.9em;
+        }
+        
+        .texterz {
+            color: #fab800;
+            font-size: 1.9em;
+            text-align: center;
+        }
+        
+        .text-orange {
+            color: #FF8F50;
+        }
+        
+        .gallery-thumbnail {
+            height: 200px;
+        }
+        
+        .card {
+            border: none;
+        }
+        
+        .green {
+            color: #28D094;
+        }
+        
+        .red {
+            color: #FF4961;
+        }
+        
+        .card-section-title {
+            position: absolute;
+            background: #FF4961;
+            color: white;
+            padding: 10px;
+            border-radius: 0 20px 20px 0;
+            box-shadow: 0 10px 18px 0 rgba(62, 57, 107, 0.2);
+            top: -20px;
+            left: -20px;
+            z-index: 1000000000;
+            width: 200px;
+        }
+        
+        tr.bg-danger th {
+            border-bottom: 1px solid #FF4961;
+        }
+        
+        .project-table tbody tr td:first-child {
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        
+        .ebendo-table th,
+        .qua-ibo-table th {
+            border-bottom: 1px solid #1e9ff2 !important;
+        }
+        
+        .ebendo-table tbody tr,
+        .ebendo-table tbody td {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body class="horizontal-layout horizontal-menu 2-columns   menu-expanded" data-open="hover" data-menu="horizontal-menu" data-col="2-columns" onresize="setCardHeight();">
+    <!-- fixed-top-->
+    <nav class="oando-gradient header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow navbar-static-top navbar-light navbar-brand-center">
+        <div class="navbar-wrapper">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="">
+                            <h3 class="brand-text text-white">Coronavirus World Overview
+                            </h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row"></div>
+            <div class="content-body">
+
+
+                <div class="row">
+                    <div class="col-12 col-lg-12 col-xl-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color:#5958ab">
+                                <h4 class="card-title text-center" style="color:#fff">Statistics</h4>
+                            </div>
+                            <ul style="margin-top:1%">
+                                <li style="font-size:1.0em">
+                                    Since the first case of Corona Virus reported on the 8
+                                    th December, 2019 in Wuhan China, a total of 96,862,056 cases have been reported
+                                    worldwide
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="card pull-up" id="RigCarder" style="min-height: 191px">
+                        <div class="" style="min-height: 396px; height: 430px">
+                            <div class="card-header">
+                                <h4 class="card-title text-center">Overall Job Focus (Strategic Objective)<span class="header-value"  id="okpai-value"></span>
+                                </h4>
+
+                            </div>
+                            <div class="card-content">
+                                <br>
+
+                                <!-- <div id="donut-chart" style="width: 100%; height: 430px; margin: 0; padding: 0; position: absolute; top: 25px;"></div> -->
+                                <div id="project-donut3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="card pull-up" style="min-height: 191px;" id="EndCarder">
+                        <div class="card-header">
+                            <h4 class="card-title text-center">Overall Job Focus (Strategic Objective)<span class="header-value" id="okpai-value"></span></h4>
+                        </div>
+                        <div class="card-content collapse show">
+                            <div class="card-body">
+                                <div>
+
+                                    <canvas id="rigless-stat3" id="EndCarder" height="317" width="200"></canvas>
+
+                                    <!-- <canvas id="rigless-stat" height="317"></canvas> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Revenue, Hit Rate & Deals -->
+                <div class="row">
+                    <div class="col-xl-12 col-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-12">
+                                <div class="card pull-up" style="min-height: 191px" id="WellCarder">
+                                    <div class="card-header">
+                                        <h4 class="text-center" style="margin-top:8px; font-weight: 700;">                                               
+                                                    <span class="texterq"><span class="green">53</span> of 80 Completed</span><br>
+                                                    <span class="texterw">(Impact of 53 Seen)</span>                                                    
+                                                </h4>
+                                        <div style="margin: 0px 20px">
+                                            <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                                <div class="progress-bar bg-gradient-x-success" role="progressbar" style="width: 66%" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-gradient-x-danger" role="progressbar" style="width: 34%" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="border-right-blue-grey" style="padding: 2%; width:50%; margin-top: 2%; border-width:4px;"></div>
+                                    <div class="border-top-blue-grey" style="width:50%; margin: 0 auto !Important;border-width:4px;"></div>
+                                    <div class="border-left-blue-grey border-right-blue-grey" style="padding:2%; margin-left:25%; margin-right:25%;border-width:4px;"></div>
+
+                                    <div class="card-content collapse show">
+                                        <div class="card-body pt-0">
+                                            <div class="row">
+                                                <div class="col-md-6 col-12 border-right-blue-grey border-right-lighten-5 text-center">
+                                                    <div style="margin: 0 auto">
+                                                        <div class="progress progress-sm mt-1 mb-0 box-shadow-2" style="margin: 0 20px;">
+                                                            <div class="progress-bar bg-gradient-x-success" role="progressbar" style="width: 64%" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            <div class="progress-bar bg-gradient-x-danger" role="progressbar" style="width: 36%" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <h6 class="success text-bold-600" style="height: 23px;"><i class="fas fa-asterisk fa-lg"></i></h6> -->
+                                                    <h4 class="texterq font-large-2 text-bold-400"><small class="green">35</small><small>/55</small></h4>
+                                                    <p class="mb-0">RIGLESS</p>
+
+                                                    <div class="border-right-blue-grey" style="padding: 3%; width:50%; margin-top: 3%;border-width:4px;"></div>
+                                                    <div class="border-bottom-blue-grey mb-0" style="width:60%; margin: 0 auto;border-width:4px;"></div>
+                                                    <div class="border-left-blue-grey border-right-blue-grey" style="padding:2%; margin-left:20%;border-width:4px; margin-right:20%;"></div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-12 border-right-blue-grey border-right-lighten-5 text-center" data-toggle="modal" data-target="#RIGLESSLong">
+                                                            <!-- <h6 class="success text-bold-600" style="height: 23px;"><i class="fas fa-asterisk fa-lg"></i></h6><i class="fas fa-hand-point-left heartbeat green"></i> -->
+                                                            <h4 class="font-large-1 text-bold-400" title="VIEW OUTFLOW ENHANCEMENT" style="cursor:pointer;"><small>3</small></h4>
+                                                            <p class="font-small-2 mb-0" title="VIEW OUTFLOW ENHANCEMENT" style="cursor:pointer;">OUTFLOW ENHANCEMENT</p>
+
+                                                        </div>
+                                                        <div class="col-md-6 col-12 text-center" data-toggle="modal" data-target="#RIGBASELong">
+                                                            <!-- <h6 class="success text-bold-600" style="height: 23px;"><i class="fas fa-asterisk fa-lg"></i></h6>                   -->
+                                                            <h4 class="font-large-1 text-bold-400 " title="VIEW INFLOW ENHANCEMENT" style="cursor:pointer;"><small>32</small></h4>
+                                                            <p class="font-small-2 mb-0" title="VIEW INFLOW ENHANCEMENT" style="cursor:pointer;">INFLOW ENHANCEMENTS</p>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-6 col-12 text-center">
+                                                    <div style="margin: 0 auto">
+                                                        <div class="progress progress-sm mt-1 mb-0 box-shadow-2" style="margin: 0 20px;">
+                                                            <div class="progress-bar bg-gradient-x-success" role="progressbar" style="width: 72%" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            <div class="progress-bar bg-gradient-x-danger" role="progressbar" style="width: 28%" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <h6 class="success text-bold-600" style="height: 23px;"><i class="fas fa-asterisk fa-lg"></i></h6>                   -->
+                                                    <h4 class="font-large-2 text-bold-400 texterq"><small class="green">18</small><small>/25</small></h4>
+                                                    <p class="mb-0">RIG BASED</p>
+                                                    <div class="border-right-blue-grey" style="padding: 3%; width:50%; margin-top: 3%;border-width:4px;"></div>
+                                                    <div class="border-top-blue-grey" style="width:60%; margin: 0 auto;border-width:4px;"></div>
+                                                    <div class="border-left-blue-grey border-right-blue-grey" style="padding:2%; margin-left:20%; margin-right:20%;border-width:4px;"></div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-12 border-right-blue-grey border-right-lighten-5 text-center" data-toggle="modal" data-target="#RIG-BASEDOUT">
+                                                            <!-- <h6 class="success text-bold-600" style="height: 23px;"><i class="fas fa-asterisk fa-lg"></i></h6> -->
+                                                            <h4 class="font-large-1 text-bold-400 " title="VIEW OUTFLOW ENHANCEMENT-ESP" style="cursor:pointer;"><small>14</small></h4>
+                                                            <p class="font-small-2 mb-0" title="VIEW OUTFLOW ENHANCEMENT-ESP" style="cursor:pointer; color:black;">OUTFLOW ENHANCEMENT-ESP</p>
+                                                        </div>
+                                                        <div class="col-md-6 col-12 text-center" data-toggle="modal" data-target="#RIG-BASEDING">
+                                                            <!-- <h6 class="success text-bold-600" style="height: 23px;"><i class="fas fa-asterisk fa-lg"></i></h6>                   -->
+                                                            <h4 class="font-large-1 text-bold-400 " title="VIEW INFLOW ENHANCEMENT- RECOMPLETIONS" style="cursor:pointer;"> <small>4</small></h4>
+                                                            <p class="font-small-2 mb-0" title="VIEW INFLOW ENHANCEMENT- RECOMPLETIONS" style="cursor:pointer; color:black;">INFLOW ENHANCEMENT- RECOMPLETIONS</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-12">
+                                <div class="card pull-up" id="RigCarder" style="min-height: 191px">
+                                    <div class="" style="min-height: 396px; height: 430px">
+                                        <div class="card-header">
+                                            <h4 class="card-title text-center">Overall Job Focus (Strategic Objective)<span class="header-value"  id="okpai-value"></span>
+                                            </h4>
+
+                                        </div>
+                                        <div class="card-content">
+                                            <br>
+
+                                            <!-- <div id="donut-chart" style="width: 100%; height: 430px; margin: 0; padding: 0; position: absolute; top: 25px;"></div> -->
+                                            <div id="project-donut3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <div class="card pull-up" style="min-height: 191px;" id="EndCarder">
+                                    <div class="card-header">
+                                        <h4 class="card-title text-center">Overall Job Focus (Strategic Objective)<span class="header-value" id="okpai-value"></span></h4>
+                                    </div>
+                                    <div class="card-content collapse show">
+                                        <div class="card-body">
+                                            <div>
+
+                                                <canvas id="rigless-stat3" id="EndCarder" height="317" width="200"></canvas>
+
+                                                <!-- <canvas id="rigless-stat" height="317"></canvas> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="RIGLESSLong" tabindex="-1" role="dialog" aria-labelledby="RIGLESSLongTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title texterw" style="font-weight:600; font-size: 1.6em;" id="RIGLESSLongTitle">Rigless Wells [OUTFLOW ENHANCEMENT]  <span class="badge badge-dark">3</span></h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table">
+                                                <thead style="background-color:#5958ab; color: white;">
+                                                    <tr>
+                                                        <th scope="col">No</th>
+                                                        <th scope="col">Rigless Wells</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>AZUZUAMA_04ST4:E_cent</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>EBEGORO_02ST2:J2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>EBOCHA_02L:II F</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="RIGBASELong" tabindex="-1" role="dialog" aria-labelledby="RIGBASELongTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-center">
+                                            <h5 class="modal-title texterw" style="font-weight:600; font-size: 1.6em;" id="RIGBASELongTitle">Rigless Wells [INFLOW ENHANCEMENTS] <span class="badge badge-dark">32</span> </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table">
+                                                <thead style="background-color:#5958ab; color: white;">
+                                                    <tr>
+                                                        <th scope="col">No</th>
+                                                        <th scope="col">Rigless Wells Workover</th>
+                                                        <th scope="col">No</th>
+                                                        <th scope="col">Rigless Wells Workover</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>EBOCHA_08ST:I_C</td>
+                                                        <td>18</td>
+                                                        <td>OBIAFU_40T:M1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>IDU_10L:L</td>
+                                                        <td>19</td>
+                                                        <td>OGBAINBIRI_01DL:Y</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>IRRI_02ST:Y/Y1</td>
+                                                        <td>20</td>
+                                                        <td>OGBAINBIRI_09S:D</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>IRRI_04L:Y/Y1</td>
+                                                        <td>21</td>
+                                                        <td>OKPAI_02S:II_C</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td>KWALE_03T:AH9</td>
+                                                        <td>22</td>
+                                                        <td>OKPAI_07S:IV_A</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">6</th>
+                                                        <td>KWALE_06L:KW17</td>
+                                                        <td>23</td>
+                                                        <td>OLEH_02L:N1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">7</th>
+                                                        <td>KWALE_06S:AH5</td>
+                                                        <td>24</td>
+                                                        <td>OLEH_02S:H1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">8</th>
+                                                        <td>MBEDE_27H:IV_D</td>
+                                                        <td>25</td>
+                                                        <td>OLEH_03L:H2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">9</th>
+                                                        <td>OBAMA_05L:L</td>
+                                                        <td>26</td>
+                                                        <td>OSHI_06S:N/O</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">10</th>
+                                                        <td>OBAMA_05S:P</td>
+                                                        <td>27</td>
+                                                        <td>OSHI_08S:N/O</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">11</th>
+                                                        <td>OBIAFU_02T:P/QMN</td>
+                                                        <td>28</td>
+                                                        <td>OSHI_12S:N/O</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">12</th>
+                                                        <td>OBIAFU_08T:P/QSW</td>
+                                                        <td>29</td>
+                                                        <td>OSHI_15L:T</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">13</th>
+                                                        <td>OBIAFU_14L:P/QSW</td>
+                                                        <td>30</td>
+                                                        <td>OSHI_15S:T</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">14</th>
+                                                        <td>OBIAFU_19S:P/QMN</td>
+                                                        <td>31</td>
+                                                        <td>SAMABRI_EAST_06L:H5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">15</th>
+                                                        <td>OBIAFU_29L:P/QMN</td>
+                                                        <td>32</td>
+                                                        <td>SAMABRI_EAST_06S:H2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">16</th>
+                                                        <td>OBIAFU_37L:P/QSW</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">17</th>
+                                                        <td>OBIAFU_37S:M1</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="RIG-BASEDOUT" tabindex="-1" role="dialog" aria-labelledby="RIGLESSLongTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title texterw" style="font-weight:600; font-size: 1.6em;" id="RIGLESSLongTitle">Rigbased Wells [OUTFLOW ENHANCEMENT-ESP] <span class="badge badge-dark"> 14</span></h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table">
+                                                <thead style="background-color:#5958ab; color: white;">
+                                                    <tr>
+                                                        <th scope="col">No</th>
+                                                        <th scope="col">Rigbased Wells</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>CLOUGH_CREEK_01T:A</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>CLOUGH_CREEK_03T:G</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>CLOUGH_CREEK_04T:I</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>CLOUGH_CREEK_05ST:G</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td>CLOUGH_CREEK_06ST:A</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">6</th>
+                                                        <td>CLOUGH_CREEK_08T:G</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">7</th>
+                                                        <td>SAMABRI_EAST_04ST2:A1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">8</th>
+                                                        <td>SAMABRI_EAST_05ST4:A1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">9</th>
+                                                        <td>SAMABRI_EAST_08T:A1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">10</th>
+                                                        <td>SAMABRI_EAST_10T:A1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">11</th>
+                                                        <td>SAMABRI_EAST_11T:A1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">12</th>
+                                                        <td>TEBIDABA_10T:A</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">13</th>
+                                                        <td>TEBIDABA_11T:A</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">14</th>
+                                                        <td>TEBIDABA_14T:A</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="RIG-BASEDING" tabindex="-1" role="dialog" aria-labelledby="RIGLESSLongTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title texterw" style="font-weight:600; font-size: 1.6em;" id="RIGLESSLongTitle">Rigbased Wells [INFLOW ENHANCEMENT- RECOMPLETIONS] <span class="badge badge-dark">4</span></h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table">
+                                                <thead style="background-color:#5958ab; color: white;">
+                                                    <tr>
+                                                        <th scope="col">No</th>
+                                                        <th scope="col">Rigbased Wells</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>EBEGORO_11T:G</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>EBEGORO_11T:I</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>MBEDE_03T:III_E</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>MBEDE_04L:II I</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>MBEDE_04S:II E</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>MBEDE_06T:III F</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-xs-6 col-md-6 col-lg-6">
+                        <div class="card">
+                            <div class="">
+                                <div class="card-content">
+                                    <div class="">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" scope="col ">Rigless Breakdown</th>
+                                                        <th class="text-center" scope="col">Restoration</th>
+                                                        <th class="text-center" scope="col">Optimization</th>
+                                                        <th class="text-center" scope="col">Total</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="text-center" scope="row">NO of Wells</th>
+                                                        <td class="text-center">15</td>
+                                                        <td class="text-center">20</td>
+                                                        <td class="text-center">35</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xs-6 col-md-6 col-lg-6">
+                        <div class="card">
+                            <div class="">
+                                <div class="card-content">
+                                    <div class="">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" scope="col">Rig-based Breakdown</th>
+                                                        <th class="text-center" scope="col">Restoration</th>
+                                                        <th class="text-center" scope="col">Optimizaton</th>
+                                                        <th class="text-center" scope="col">Total</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="text-center" scope="row">No of Wells</th>
+                                                        <td class="text-center">16</td>
+                                                        <td class="text-center">2</td>
+                                                        <td class="text-center">18</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-xl-3">
+                        <div class="card" style="min-height: 396px; height: 430px" id="budget-card">
+                            <div class="card-header">
+                                <h4 class="card-title text-center">RIGLESS INTERVENTION CONTRIBUTION 
+                                    <br>
+                                    <span class="texterq">Rigless Stats 51%</span>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </h4>
+                            </div>
+                            <div class="card-content">
+                                <br>
+                                <div id="project-donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-xl-3">
+                        <div class="card" id="budget-breakdown-card">
+                            <div class="card-header">
+                                <h4 class="card-title text-center">RIGLESS INTERVENTION CONTRIBUTION
+                                    <br>
+                                    <span class="texterq">Rigless Stats 51%</span>
+                                    <h3 class="texterz">$0.60/bbl</h3>
+                                </h4>
+                            </div>
+                            <div class="card-content collapse show">
+                                <div class="card-body">
+                                    <div>
+                                        <canvas id="rigless-stat" height="317"></canvas>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-xl-3">
+                        <div class="card" id="okpai-card">
+                            <div class="card-header">
+                                <h4 class="card-title text-center">RIG BASED WORKOVER 
+                                    <br>
+                                    <span class="texterq">Rig-based Stats 49%</span>
+                                    <h3 class="texterz">$1.34/bbl</h3>
+                                </h4>
+                            </div>
+                            <div class="card-content">
+                                <div>
+                                    <br>
+
+                                    <div id="project-donut2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-xl-3">
+                        <div class="card" id="okpai-card2">
+                            <div class="card-header">
+                                <h4 class="card-title text-center">RIG BASED WORKOVER 
+                                    <br>
+                                    <span class="texterq">Rig-based Stats 49%</span>
+                                    <h3 class="texterz">$1.34/bbl</h3>
+                                </h4>
+                            </div>
+                            <div class="card-content" style="margin: 0 5px">
+                                <div>
+
+                                    <div class="col-12 col-lg-10 col-xl-10" style="margin: 0 auto">
+                                        <canvas id="rigless-stat2" height="357"></canvas>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-4 col-xl-4">
+                        <div class="card proj-bottom" id="project-card1">
+                            <div class="card-header">
+                                <h4 class="card-title text-center">Oil Production (PD) Performance Profile (Annualized Average)<span class="header-value">+13,103 BOPD<br></span></h4>
+                            </div>
+                            <div class="card-content">
+                                <canvas id="production-chart1" height="300" style="margin-left:3px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xl-4">
+                        <div class="card proj-bottom" id="project-card2">
+                            <div class="card-header">
+                                <h4 class="card-title text-center">Gas Production (PD) Performance Profile (Annualized Average) <span class="header-value">+31 MMscfd<br></span></h4>
+                            </div>
+                            <div class="card-content">
+                                <canvas id="production-chart2" height="300" style="margin-left:3px"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xl-4">
+                        <div class="card proj-bottom" id="project-card3">
+                            <div class="card-header">
+                                <h4 class="card-title text-center">Oil &amp; Gas Production (PO) Performance Profile (Annualized Average)<span class="header-value">+ 18,322 BOE</span></h4>
+                            </div>
+                            <div class="card-content">
+                                <canvas id="production-chart3" height="300" style="margin-left:3px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="fac-readiness-table" class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color:#5958ab">
+                                <h4 class="card-title text-center" style="color:#fff">Production Rate</h4>
+                            </div>
+                            <div class="card-content">
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-xl mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 33.33%" class="border-top-0 text-center border-right-blue-grey" colspan="4">Oil Production Rate(BOPD)
+                                                </th>
+                                                <th style="width: 33.33%" class="border-top-0 text-center border-right-blue-grey" colspan="4">Gas Production Rate (MMscfd)
+                                                </th>
+                                                <th style="width: 33.33%" class="border-top-0 text-center" colspan="4">Oil & Gas Production Rate (BOEPD)
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="width: 8.33%" class="border-top-0 border-right-blue-grey"></th>
+                                                <th style="width: 8.33%" class="border-top-0 border-right-blue-grey">Jan-18</th>
+                                                <th style="width: 8.33%" class="border-top-0 border-right-blue-grey">Dec-18</th>
+                                                <th style="width: 8.33%" class="border-top-0 border-right-blue-grey"></th>
+
+                                                <th style="width: 8.33%" class="border-top-0 border-right-blue-grey"></th>
+                                                <th style="width: 8.33%" class="border-top-0 border-right-blue-grey">Jan-18</th>
+                                                <th style="width: 8.33%" class="border-top-0 border-right-blue-grey">Dec-18</th>
+                                                <th style="width: 8.33%" class="border-top-0 border-right-blue-grey"></th>
+
+                                                <th style="width: 8.33%" class="border-top-0 border-right-blue-grey"></th>
+                                                <th style="width: 8.33%" class="border-top-0 border-right-blue-grey">Jan-18</th>
+                                                <th style="width: 8.33%" class="border-top-0 border-right-blue-grey">Dec-18</th>
+                                                <th style="width: 8.33%" class="border-top-0 border-right-blue-grey"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="border-top-0">Total Production (Base + Uplift)</td>
+                                                <td class="border-top-0">81,286</td>
+                                                <td class="border-top-0">81,224</td>
+                                                <td class="border-top-0 border-right-blue-grey">
+                                                    <div class="progress" style="height: 18px; margin-bottom: 0">
+                                                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="-0.5" aria-valuemin="0" aria-valuemax="100" style="width:100%;">-0.1
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-top-0">
+                                                    Total Production (Base + Uplift)
+                                                </td>
+                                                <td class="border-top-0">
+                                                    878
+                                                </td>
+                                                <td class="border-top-0">
+                                                    812
+                                                </td>
+                                                <td class="border-top-0 border-right-blue-grey">
+                                                    <div class="progress" style="height: 18px; margin-bottom: 0">
+                                                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="-0.5" aria-valuemin="0" aria-valuemax="100" style="width:100%;">-7.5
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="border-top-0">
+                                                    Total Production (Base + Uplift)
+                                                </td>
+                                                <td class="border-top-0">
+                                                    227,570
+                                                </td>
+                                                <td class="border-top-0">
+                                                    196,322
+                                                </td>
+                                                <td class="border-top-0">
+                                                    <div class="progress bg-dark text-white" style="height: 18px; margin-bottom: 0; text-align: center">
+                                                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="-19.4" aria-valuemin="0" aria-valuemax="100" style="width:100%;">-4.9%
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-top-0">Total Production (Base)</td>
+                                                <td class="border-top-0">78,081</td>
+                                                <td class="border-top-0">56,243</td>
+                                                <td class="border-top-0 border-right-blue-grey">
+                                                    <div class="progress" style="height: 18px; margin-bottom: 0">
+                                                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%;">-28%
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-top-0">
+                                                    Total Production (Base)
+                                                </td>
+                                                <td class="border-top-0">
+                                                    874
+                                                </td>
+                                                <td class="border-top-0">
+                                                    745
+                                                </td>
+                                                <td class="border-top-0 border-right-blue-grey">
+                                                    <div class="progress bg-dark text-white" style="height: 18px; margin-bottom: 0; text-align: center">
+                                                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%;">-14.8%
+                                                        </div>
+                                                        <span style="text-align: center"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="border-top-0">
+                                                    Total Production (Base)
+                                                </td>
+                                                <td class="border-top-0">
+                                                    223,681
+                                                </td>
+                                                <td class="border-top-0">
+                                                    172,602
+                                                </td>
+                                                <td class="border-top-0">
+                                                    <div class="progress bg-dark text-white" style="height: 18px; margin-bottom: 0; text-align: center">
+                                                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%;">-19.4%
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-top-0">Uplift (BOPD)</td>
+                                                <td class="border-top-0" style="color:#32CD32">
+                                                    +3,205
+                                                </td>
+                                                <td class="border-top-0" style="color:#32CD32">
+                                                    +24,981
+                                                </td>
+                                                <td class="border-top-0 border-right-blue-grey">
+                                                </td>
+
+                                                <td class="border-top-0">
+                                                    Uplift (MMscfd)
+                                                </td>
+                                                <td class="border-top-0" style="color:#32CD32">
+                                                    +4
+                                                </td>
+                                                <td class="border-top-0" style="color:#32CD32">
+                                                    +67
+                                                </td>
+                                                <td class="border-top-0 border-right-blue-grey">
+                                                </td>
+                                                <td class="border-top-0">
+                                                    Uplift (BOEPD)
+                                                </td>
+                                                <td class="border-top-0" style="color:#32CD32">
+                                                    +3,890
+                                                </td>
+                                                <td class="border-top-0" style="color:#32CD32">
+                                                    +36,150
+                                                </td>
+                                                <td class="border-top-0">
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-6">
+                    <div class="card" id="end-one">
+                        <div class="card-header">
+                            <h4 class="card-title text-center">Rigless Routine VS Repayment</h4>
+                        </div>
+                        <div class="card-content">
+                            <div>
+                                <div class="col-12 col-lg-8 col-xl-8" style="margin:0 auto">
+                                    <canvas id="rigless-stat5" height="317"></canvas>
+                                </div>
+                                <!-- <canvas id="rigless-stat2"></canvas> -->
+                                <!--<canvas id="okpai" height="200"></canvas>-->
+                                <!-- <div id="okpai" style="height: 330px"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-6">
+                    <div class="card" id="end-two">
+                        <div class="card-header">
+                            <h4 class="card-title text-center">Job Focus (Restoration versus Optimization)</h4>
+                        </div>
+                        <div class="card-content">
+                            <div>
+                                <div class="col-12 col-lg-8 col-xl-8" style="margin:0 auto">
+                                    <canvas id="rigless-stat4" height="317"></canvas>
+                                </div>
+                                <!-- <canvas id="rigless-stat2"></canvas> -->
+                                <!--<canvas id="okpai" height="200"></canvas>-->
+                                <!-- <div id="okpai" style="height: 330px"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+            <div class="col-12 col-lg-12 col-xl-12">
+                <div class="" >
+                    <div class="card-header" style="background-color:#5958ab">
+                        <h4 class="card-title text-center" style="color:#fff; font-size:1.4em;">REVIEW</h4>
+
+                    </div>
+                    <div class="row">
+                        <div class="card-body col-12 col-lg-6 col-xs-6 col-md-6" style="margin-top:-15px;">
+                            <div class="card" style="padding:10px">
+                                <h4 class="text-center" style="font-weight:600">OBSERVATIONS</h4>
+                                <ul>
+                                    <li>
+                                        Rigless jobs give best value for money at 0.60 dollars per barrel. Specifically, tubing wash offers the overall best value for money at 0.08 dollars per barrel contributed.
+                                    </li>
+                                    <li>
+                                        Rigless level change offers better value for money than rig based recompletions.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body col-12 col-lg-6 col-xs-6 col-md-6" style="margin-top:-15px;">
+                            <div class="card" style="padding:10px">
+                                <h4 class="text-center" style="font-weight:600;">RECOMMENDATION</h4>
+                                <ul>
+                                    <li>
+                                        NAOC should pursue more Rigless activities.
+                                    </li>
+                                    <li>
+                                        When level change is the goal, Rigless level change methods should be considered first before considering overall recompletions with rig.
+                                    </li>
+                                    <li>
+                                        These Rigless activities should be aimed more at Production Restoration than optimization
+                                    </li>
+                                    <li>
+                                        Better selection process required for production optimization.
+                                    </li>
+                                    <li>
+                                        Strategically, OER should focus on WBUR to identify good restoration candidates.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div> -->
+
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-6">
+                    <div class="card" id="endShow" style="min-height: 91%">
+                        <div class="card-header" style="background-color:#5958ab">
+                            <h4 class="card-title text-center" style="color:#fff">ASSUMPTIONS</h4>
+                        </div>
+                        <ul style="margin-top:1%">
+
+                            <li style="font-size:1.0em">
+                                12 month average rate (per well) used as basis for dollar per barrel estimate.
+                            </li>
+                            <li style="font-size:1.0em">
+                                For wells that produced for less than 12 months in 2018, forecasts obtained using 17.5% annual decline to obtain 12 month average.
+                            </li>
+                            <li style="font-size:1.0em">
+                                Annualized Average is based on 2018 uplift only and contains no forecasts.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-6">
+                    <div class="card" id="startshow" style="min-height: 91%">
+                        <div class="card-header" style="background-color:#5958ab">
+                            <h4 class="card-title text-center" style="color:#fff">OBSERVATIONS</h4>
+                        </div>
+                        <ul style="margin-top:1%">
+
+                            <li style="font-size:1.0em">
+                                On a cost per bbl basis, based on the first twelve month production uplift, both rigless activities @ $3.5/bbl & rig-based activities @ $8.6/bbl are value adding.
+                            </li>
+                            <li style="font-size:1.0em;  margin-left:35px">
+                                Within rigless jobs, tubing wash jobs added the highest value in comparison to spend.
+                            </li>
+                            <li style="font-size:1.0em">
+                                Repayment Arrears (RA) jobs added higher value than routine
+                            </li>
+                            <li style="font-size:1.0em;  margin-left:35px">
+                                NAOC selects better candidates for RA activities
+                            </li>
+                            <li style="font-size:1.0em">
+                                Better performance seen in production restoration jobs than optimization activities
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-12 col-xl-12">
+                    <div class="card">
+                        <div class="card-header" style="background-color:#5958ab">
+                            <h4 class="card-title text-center" style="color:#fff">RECOMMENDATION</h4>
+                        </div>
+                        <ul style="margin-top:1%">
+                            <li style="font-size:1.0em">
+                                NAOC should pursue more Rigless activities.
+                            </li>
+                            <li style="font-size:1.0em">
+                                When level change is the goal, Rigless level change methods should be considered first before considering overall recompletions with rig.
+                            </li>
+                            <li style="font-size:1.0em">
+                                These Rigless activities should be aimed more at Production Restoration than optimization
+                            </li>
+                            <li style="font-size:1.0em">
+                                Better selection process required for production optimization.
+                            </li>
+                            <li style="font-size:1.0em">
+                                Strategically, OER should focus on WBUR to identify good restoration candidates.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer footer-static footer-light navbar-shadow">
+        <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
+            <span class=" d-block d-md-inline-block">Copyright &copy; 2019 OANDO IT. </span>
+        </p>
+    </footer>
+
+    <script src="assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="assets/vendors/js/ui/jquery.sticky.js"></script>
+    <script type="text/javascript" src="assets/vendors/js/charts/jquery.sparkline.min.js"></script>
+    <!-- <script src="assets/vendors/js/charts/chart.min.js" type="text/javascript"></script> -->
+    <script src="assets/vendors/js/charts/chartReal.js" type="text/javascript"></script>
+
+    <script src="assets/vendors/js/charts/d3.min.js" type="text/javascript"></script>
+    <script src="assets/vendors/js/charts/c3.min.js" type="text/javascript"></script>
+
+    <script src="assets/js/core/app-menu.js" type="text/javascript"></script>
+    <script src="assets/js/core/app.js" type="text/javascript"></script>
+    <script src="assets/js/highcharts.js" type="text/javascript"></script>
+    <script src="assets/js/anychart-base.min.js" type="text/javascript"></script>
+    <script src="assets/js/anychart-ui.min.js" type="text/javascript"></script>
+    <script src="assets/js/anychart-circular-gauge.min.js" type="text/javascript"></script>
+
+    <script src="assets/js/scripts/charts/c3/bar-pie/donut.js" type="text/javascript"></script>
+    <script src="assets/js/scripts/pages/dashboard-sales.js?ver=3" type="text/javascript"></script>
+    <script src="assets/js/project-bottom.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="assets/js/scripts/ui/breadcrumbs-with-stats.js"></script>
+    <script src="assets/js/scripts/gallery/photo-swipe/photoswipe-script.js" type="text/javascript"></script>
+    <script src="assets/vendors/js/gallery/photo-swipe/photoswipe.min.js" type="text/javascript"></script>
+    <script src="assets/vendors/js/gallery/photo-swipe/photoswipe-ui-default.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/vendors/js/ui/jquery.sticky.js"></script>
+    <script type="text/javascript" src="assets/vendors/js/charts/jquery.sparkline.min.js"></script>
+    <script src="assets/vendors/js/gallery/masonry/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="assets/js/core/app-menu.js" type="text/javascript"></script>
+    <script src="assets/js/core/app.js" type="text/javascript"></script>
+    <script src="assets/js/scripts/customizer.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function() {
+            function setCardHeight() {
+                loadProjectDonut();
+                loadProjectDonut2();
+                loadProjectDonut3();
+                nglChart();
+                nglChart2();
+                nglChart3();
+                nglChart4();
+                nglChart5()
+                productionChart1();
+                productionChart2();
+                productionChart3();
+
+                var budgetCard = $('#budget-card');
+                var budgetBreakdownCard = $('#budget-breakdown-card');
+                var okpaiCard = $('#okpai-card');
+                var okpaiCard2 = $('#okpai-card2');
+                var projectCard1 = $('project-card1');
+                var projectCard2 = $('project-card2');
+                var projectCard3 = $('project-card3');
+
+                var budget = budgetCard.height();
+                var budgetBreakdown = budgetBreakdownCard.height();
+                var okpai = okpaiCard.height();
+                var okpai2 = okpaiCard2.height();
+
+                var project1 = projectCard1.height();
+                var project2 = projectCard2.height();
+                var project3 = projectCard3.height();
+
+                var maxMiddle = Math.max(project1, project2, project3);
+
+                projectCard1.css({
+                    'min-height': maxMiddle
+                });
+                projectCard2.css({
+                    'min-height': maxMiddle
+                });
+                projectCard3.css({
+                    'min-height': maxMiddle
+                });
+
+                var max = Math.max(budget, budgetBreakdown, okpai, okpai2);
+                budgetCard.css({
+                    'height': max
+                });
+                budgetBreakdownCard.css({
+                    'height': max
+                });
+                okpaiCard.css({
+                    'height': max
+                });
+                okpaiCard2.css({
+                    'height': max
+                });
+
+                var EndCader = $('#EndCarder');
+                var RigCarder = $('#RigCarder');
+                var WellCarder = $('#WellCarder');
+                var rig = RigCarder.height();
+                var well = WellCarder.height();
+                var end = EndCader.height();
+
+                var maxtop = Math.max(rig, well, end);
+                RigCarder.css({
+                    'height': maxtop
+                });
+                WellCarder.css({
+                    'height': maxtop
+                });
+
+                EndCader.css({
+                    'height': maxtop
+                });
+
+                var EndOne = $('#end-one');
+                var EndTwo = $('#end-two');
+                // var EndThree = $('#end-three');
+                var one = EndOne.height();
+                var two = EndTwo.height();
+                // var three = EndThree.height();
+
+                var maxbottom = Math.max(one, two);
+                EndOne.css({
+                    'height': maxbottom
+                });
+                EndTwo.css({
+                    'height': maxbottom
+                });
+                // EndThree.css({
+                //     'height': maxbottom
+                // });
+
+                var show1 = $('#endshow');
+                var show2 = $('#startshow');
+
+                var showOne = show1.height();
+                var showtwo = show2.height();
+                console.log(showOne);
+                var showMAX = Math.max(show1, show2);
+
+                ndshow.css({
+                    'height': 100
+                });
+                tartshow.css({
+                    'height': 100
+                });
+
+                //  var c3Tiltle = document.getElementsByClassName('c3-chart-arcs-title')[0].style.font-weight = 900;
+            }
+
+            setCardHeight();
+        })
+    </script>
+
+    <script>
+        function nglChart() {
+            //Get the context of the Chart canvas element we want to select
+            var ctx = $("#rigless-stat");
+
+            // Chart Options
+            var chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    xAxes: [{
+                        display: false,
+                        gridLines: {
+                            color: "#f3f3f3",
+                            drawTicks: false,
+                        },
+                        scaleLabel: {
+                            display: false,
+                            labelString: ''
+                        }
+                    }],
+                    yAxes: [{
+                            display: true,
+                            id: 'A',
+                            type: 'linear',
+                            position: 'left',
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Dollar per Barrel'
+                            },
+
+                        }, {
+                            display: true,
+                            id: 'B',
+                            type: 'linear',
+                            gridLines: {
+                                color: "rgba(0, 0, 0, 0)",
+                            },
+                            position: 'right',
+                            ticks: {
+                                max: 45,
+                                min: 0
+                            },
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Contribution (%)'
+                            },
+                        }]
+                        // [{
+                        //     display: true,
+                        //     gridLines: {
+                        //         color: "#f3f3f3",
+                        //         drawTicks: false,
+                        //     },
+                        //     scaleLabel: {
+                        //         display: true,
+                        //         labelString: 'Dollar per Barrel'
+                        //     },
+                        // }]
+                },
+                title: {
+                    display: false,
+                    text: 'Chart.js Combo Bar Line Chart'
+                }
+            };
+
+            // Chart Data
+            var chartData = {
+                labels: ["Turbing Wash", "Cement Packer", "Level Change", "Sand Treatment", "Additional Perforations", "Stimulation", "CWSO"],
+                datasets: [{
+                    type: 'line',
+                    label: "Contribution",
+                    yAxisID: 'B',
+                    data: [12, 45, 24, 0, 16, 3, 1],
+                    pointBackgroundColor: "#fff",
+                    pointBorderColor: "#1E9FF2", //#196dc1
+                    borderWidth: 3,
+                    fill: false,
+                    pointRadius: 4,
+                    backgroundColor: "#1E9FF2",
+                    borderColor: "#1E9FF2",
+                    lineTension: 0,
+                }, {
+                    type: 'bar',
+                    label: "Dollar Per Barrel",
+                    yAxisID: 'A',
+                    data: [0.08, 0.15, 0.46, 1.45, 1.80, 2.00, 3.87],
+                    backgroundColor: ['#A6B3B3', '#31859D', '#3F3F94', '#E46C0B', '#E90300', '#FA9D00', '#3B8AD9', '#7BC0F7'],
+                    borderColor: "transparent",
+                    borderWidth: 2
+                }]
+            };
+
+            var config = {
+                type: 'bar',
+
+                // Chart Options
+                options: chartOptions,
+
+                data: chartData
+            };
+
+            // Create the chart
+            var lineChart = new Chart(ctx, config);
+        }
+
+        function nglChart2() {
+            //Get the context of the Chart canvas element we want to select
+            var ctx = $("#rigless-stat2");
+
+            // Chart Options
+            var chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    xAxes: [{
+                        display: false,
+                        gridLines: {
+                            color: "#f3f3f3",
+                            drawTicks: false,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: ''
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        id: 'A',
+                        type: 'linear',
+                        position: 'left',
+                        ticks: {
+                            max: 1.5,
+                            min: 0
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Dollar per Barrel'
+                        },
+
+                    }, {
+                        display: true,
+                        id: 'B',
+                        type: 'linear',
+                        gridLines: {
+                            color: "rgba(0, 0, 0, 0)",
+                        },
+                        position: 'right',
+                        ticks: {
+                            max: 76,
+                            min: 0,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Contribution (%)'
+                        },
+                    }]
+                },
+                title: {
+                    display: false,
+                    text: 'Chart.js Combo Bar Line Chart'
+                }
+            };
+
+            // Chart Data
+            var chartData = {
+                labels: ["Recompletions", "ESP"],
+                datasets: [{
+                    type: 'line',
+                    label: "Contributions",
+                    yAxisID: 'B',
+                    data: [24, 76],
+                    pointBackgroundColor: "#fff",
+                    pointBorderColor: "#1E9FF2", //#196dc1
+                    borderWidth: 3,
+                    fill: false,
+                    pointRadius: 4,
+                    backgroundColor: "#1E9FF2",
+                    borderColor: "#1E9FF2",
+                }, {
+                    type: 'bar',
+                    label: "Dollar Per Barrel",
+                    yAxisID: 'A',
+                    data: [1.13, 1.45],
+                    backgroundColor: ['#FA9D00', '#5958ab'],
+                    borderColor: "transparent",
+                    borderWidth: 2
+                }]
+            };
+
+            var config = {
+                type: 'bar',
+
+                // Chart Options
+                options: chartOptions,
+
+                data: chartData
+            };
+
+            // Create the chart
+            var lineChart = new Chart(ctx, config);
+        }
+
+        function nglChart3() {
+            //Get the context of the Chart canvas element we want to select
+            var ctx = $("#rigless-stat3");
+
+            // Chart Options
+            var chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        gridLines: {
+                            color: "#31859D",
+                            drawTicks: false,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: ''
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        id: 'A',
+                        type: 'linear',
+                        position: 'left',
+                        ticks: {
+                            max: 1.2,
+                            min: 0
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Dollar per Barrel'
+                        },
+
+                    }, {
+                        display: true,
+                        id: 'B',
+                        type: 'linear',
+                        gridLines: {
+                            color: "rgba(0, 0, 0, 0)",
+                        },
+                        position: 'right',
+                        ticks: {
+                            max: 53,
+                            min: 0
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Rate Contribution (%)',
+
+                        },
+                    }]
+                },
+                title: {
+                    display: false,
+                    text: 'Chart.js Combo Bar Line Chart'
+                }
+            };
+
+            // Chart Data
+            var chartData = {
+                labels: ["Inflow", "Recompletions", "Outflow"],
+                datasets: [{
+                    type: 'line',
+                    label: "Contributions",
+                    yAxisID: 'B',
+                    data: [36, 12, 52],
+                    pointBackgroundColor: "#fff",
+                    pointBorderColor: "#1E9FF2", //#196dc1
+                    borderWidth: 3,
+                    fill: false,
+                    pointRadius: 4,
+                    backgroundColor: "#1E9FF2",
+                    borderColor: "#1E9FF2",
+                    lineTension: 0,
+                }, {
+                    type: 'bar',
+                    label: "Dollar Per Barrel",
+                    yAxisID: 'A',
+                    data: [0.72, 1.13, 1.20],
+                    backgroundColor: ['#31859D', '#5958ab', '#FA9D00'],
+                    borderColor: "transparent",
+                    borderWidth: 2
+                }]
+            };
+
+            var config = {
+                type: 'bar',
+
+                // Chart Options
+                options: chartOptions,
+
+                data: chartData
+            };
+
+            // Create the chart
+            var lineChart = new Chart(ctx, config);
+        }
+
+        function nglChart4() {
+            //Get the context of the Chart canvas element we want to select
+            var ctx = $("#rigless-stat4");
+
+            // Chart Options
+            var chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        gridLines: {
+                            color: "#f3f3f3",
+                            drawTicks: false,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: ''
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        id: 'A',
+                        type: 'linear',
+                        position: 'left',
+                        ticks: {
+                            max: 2,
+                            min: 0,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Dollar per Barrel'
+                        },
+
+                    }, {
+                        display: true,
+                        id: 'B',
+                        type: 'linear',
+                        gridLines: {
+                            color: "rgba(0, 0, 0, 0)",
+                        },
+                        position: 'right',
+                        ticks: {
+                            max: 8000,
+                            min: -657,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Rate Contribution BOPD'
+                        },
+                    }]
+                },
+                title: {
+                    display: false,
+                    text: 'Chart.js Combo Bar Line Chart'
+                }
+            };
+
+            // Chart Data
+            var chartData = {
+                labels: ["Restoration", "Optimization"],
+                datasets: [{
+                    type: 'line',
+                    label: "Contributions",
+                    yAxisID: 'B',
+                    data: [7285, -657],
+                    pointBackgroundColor: "#fff",
+                    pointBorderColor: "#1E9FF2", //#196dc1
+                    borderWidth: 3,
+                    fill: false,
+                    pointRadius: 4,
+                    backgroundColor: "#1E9FF2",
+                    borderColor: "#1E9FF2",
+                }, {
+                    type: 'bar',
+                    label: "Dollar Per Barrel",
+                    yAxisID: 'A',
+                    data: [0.32, 1.86],
+                    backgroundColor: "#de6b00",
+                    borderColor: "transparent",
+                    borderWidth: 2
+                }]
+            };
+
+            var config = {
+                type: 'bar',
+
+                // Chart Options
+                options: chartOptions,
+
+                data: chartData
+            };
+
+            // Create the chart
+            var lineChart = new Chart(ctx, config);
+        }
+
+        function nglChart5() {
+            //Get the context of the Chart canvas element we want to select
+            var ctx = $("#rigless-stat5");
+
+            // Chart Options
+            var chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        gridLines: {
+                            color: "#f3f3f3",
+                            drawTicks: false,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: ''
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        id: 'A',
+                        type: 'linear',
+                        position: 'left',
+                        ticks: {
+                            max: 6.5,
+                            min: 0,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Dollar per Barrel'
+                        },
+
+                    }, {
+                        display: true,
+                        id: 'B',
+                        type: 'linear',
+                        gridLines: {
+                            color: "rgba(0, 0, 0, 0)",
+                        },
+                        position: 'right',
+                        ticks: {
+                            max: 8000,
+                            min: 0,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Rate Contribution (BOPD)'
+                        },
+                    }]
+                },
+                title: {
+                    display: false,
+                    text: 'Chart.js Combo Bar Line Chart'
+                }
+            };
+
+            // Chart Data
+            var chartData = {
+                labels: ["Repayment", "Routine"],
+                datasets: [{
+                    type: 'line',
+                    label: "Rate Contributions",
+                    yAxisID: 'B',
+                    data: [6757, 4848],
+                    pointBackgroundColor: "#fff",
+                    pointBorderColor: "#1E9FF2", //#196dc1
+                    borderWidth: 3,
+                    fill: false,
+                    pointRadius: 4,
+                    backgroundColor: "#1E9FF2",
+                    borderColor: "#1E9FF2",
+                }, {
+                    type: 'bar',
+                    label: "Dollar Per Barrel",
+                    yAxisID: 'A',
+                    data: [1.56, 6.18],
+                    backgroundColor: "#de6b00",
+                    borderColor: "transparent",
+                    borderWidth: 2
+                }]
+            };
+
+            var config = {
+                type: 'bar',
+
+                // Chart Options
+                options: chartOptions,
+
+                data: chartData
+            };
+
+            // Create the chart
+            var lineChart = new Chart(ctx, config);
+        }
+
+        function loadProjectDonut() {
+            var donutChart = c3.generate({
+                bindto: '#project-donut',
+                color: {
+                    pattern: ['#A6B3B3', '#31859D', '#3F3F94', '#E46C0B', '#E90300', '#FA9D00', '#3B8AD9', '#7BC0F7']
+                },
+                data: {
+                    columns: [
+                        ["Tubing Wash", 12],
+                        ["Cement Packer", 45],
+                        ["Level Change", 23],
+                        ["Sand Treatment", 0],
+                        ["Additional Perforations", 16],
+                        ["Stimulation", 3],
+
+                    ],
+                    type: 'donut',
+                },
+                donut: {
+                    title: "6627 BOPD",
+                    label: {
+                        format: function(value, ratio, id) {
+                            return value + "%";
+                            //return value; This shows the number in each pie
+                        }
+                    }
+                },
+                legend: {
+                    show: false
+                }
+            });
+
+            // Instantiate and draw our chart, passing in some options.
+            setTimeout(function() {
+                donutChart.load({
+                    columns: [
+                        ["CWSO", 1],
+                    ]
+                });
+            }, 1500);
+
+            // Resize chart on sidebar width change
+            $(".menu-toggle").on('click', function() {
+                donutChart.resize();
+            });
+        }
+
+        function loadProjectDonut2() {
+            var donutChart = c3.generate({
+                bindto: '#project-donut2',
+                color: {
+                    pattern: ['#5958ab', '#FA9D00']
+                },
+                data: {
+                    columns: [
+                        ["ESP", 76],
+
+                    ],
+                    type: 'donut',
+                },
+                donut: {
+                    title: "6476 BOPD",
+                    label: {
+                        format: function(value, ratio, id) {
+                            return value + "%";
+                            //return value; This shows the number in each pie
+                        }
+                    }
+                },
+                legend: {
+                    show: true
+                }
+            });
+            // Instantiate and draw our chart, passing in some options.
+            setTimeout(function() {
+                donutChart.load({
+                    columns: [
+                        ["Recompletions", 24],
+                    ]
+                });
+            }, 1500);
+
+            // Resize chart on sidebar width change
+            $(".menu-toggle").on('click', function() {
+                donutChart.resize();
+            });
+        }
+
+        function loadProjectDonut3() {
+            var donutChart = c3.generate({
+                bindto: '#project-donut3',
+                color: {
+                    pattern: ['#31859D', '#5958ab', '#FA9D00']
+                },
+                data: {
+                    columns: [
+                        ["ACTIVES", 12],
+                        ["RECOVERIES", 12],
+                        ["DEATHS", 12],
+
+                    ],
+                    type: 'donut',
+                },
+                donut: {
+                    title: "13,103 \n TOTAL CASES",
+                    label: {
+                        format: function(value, ratio, id) {
+                           // return value + "%";
+                            //return value; This shows the number in each pie
+                        }
+                    }
+                },
+                legend: {
+                    show: true
+                }
+            });
+            // Instantiate and draw our chart, passing in some options.
+            setTimeout(function() {
+                donutChart.load({
+                    columns: [
+                        ["Outflow Enhancement BOPD", 52],
+                    ]
+                });
+            }, 1500);
+
+            // Resize chart on sidebar width change
+            $(".menu-toggle").on('click', function() {
+                donutChart.resize();
+            });
+        }
+
+        function productionChart1() {
+            //Get the context of the Chart canvas element we want to select
+            var ctx = $("#production-chart1");
+
+            // Chart Options
+            var chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        gridLines: {
+                            color: "#f3f3f3",
+                            drawTicks: false,
+                        },
+                        scaleLabel: {
+                            display: false,
+                            labelString: ''
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        gridLines: {
+                            color: "#f3f3f3",
+                            drawTicks: false,
+                        },
+                        ticks: {
+                            max: 100000,
+                            min: 0,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Oil Production PD (BOPD)'
+                        }
+                    }]
+                },
+                title: {
+                    display: false,
+                    text: 'Chart.js Combo Bar Line Chart'
+                }
+            };
+
+            // Chart Data
+            var chartData = {
+                labels: ["Jan-18", "Feb-18", "Mar-18", "Apr-18", "May-18", "Jun-18", "Jul-18", "Aug-18", "Sept-18", "Oct-18", "Nov-18", "Dec-18"],
+                datasets: [{
+                    type: 'line',
+                    label: "Oil PD (Base + Uplift)",
+                    data: [81286, 76647, 78026, 75467, 76901, 74370, 77130, 74321, 79252, 79448, 75889, 81224],
+                    backgroundColor: "#fab800",
+                    borderColor: "#fab800",
+                    borderWidth: 2,
+                    pointBorderColor: "#fab800",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 2,
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 4,
+                    fill: false
+                }, {
+                    type: 'line',
+                    label: "Oil PD (Base + 10% Decline)",
+                    data: [78081, 73106, 71528, 66703, 65853, 64190, 64721, 61016, 58582, 57583, 55115, 56243],
+                    backgroundColor: "#B22222",
+                    borderColor: "#FA8E75",
+                    borderWidth: 2,
+                    pointBorderColor: "#FA8E75",
+                    pointBackgroundColor: "#FFF",
+                    pointBorderWidth: 2,
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 4,
+                    fill: true
+                }]
+            };
+
+            var config = {
+                type: 'line',
+
+                // Chart Options
+                options: chartOptions,
+
+                data: chartData
+            };
+
+            // Create the chart
+            var lineChart = new Chart(ctx, config);
+        }
+
+        function productionChart2() {
+            //Get the context of the Chart canvas element we want to select
+            var ctx = $("#production-chart2");
+
+            // Chart Options
+            var chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        gridLines: {
+                            color: "#f3f3f3",
+                            drawTicks: false,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: ''
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        gridLines: {
+                            color: "#f3f3f3",
+                            drawTicks: false,
+                        },
+                        ticks: {
+                            max: 1000,
+                            min: 0,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Oil Production PD (BOPD)'
+                        }
+                    }]
+                },
+                title: {
+                    display: false,
+                    text: 'Chart.js Combo Bar Line Chart'
+                }
+            };
+
+            // Chart Data
+            var chartData = {
+                labels: ["Jan-18", "Feb-18", "Mar-18", "Apr-18", "May-18", "Jun-18", "Jul-18", "Aug-18", "Sept-18", "oct-18", "Nov-18", "Dec-18"],
+                datasets: [{
+                    type: 'line',
+                    label: "Gas PD(Base + Uplift)",
+                    data: [878, 875, 869, 733, 819, 808, 764, 797, 803, 769, 783, 812],
+                    backgroundColor: "#fab800",
+                    borderColor: "#fab800",
+                    borderWidth: 2,
+                    pointBorderColor: "#fab800",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 2,
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 4,
+                    fill: false
+                }, {
+                    type: 'line',
+                    label: "Gas PD (Base + 10% Decline)",
+                    data: [874, 856, 849, 719, 787, 798, 738, 769, 748, 717, 733, 745],
+                    backgroundColor: "#006400",
+                    borderColor: "#FA8E75",
+                    borderWidth: 2,
+                    pointBorderColor: "#FA8E75",
+                    pointBackgroundColor: "#FFF",
+                    pointBorderWidth: 2,
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 4,
+                    fill: true
+                }]
+            };
+
+            var config = {
+                type: 'line',
+
+                // Chart Options
+                options: chartOptions,
+
+                data: chartData
+            };
+
+            // Create the chart
+            var lineChart = new Chart(ctx, config);
+        }
+
+        function productionChart3() {
+            //Get the context of the Chart canvas element we want to select
+            var ctx = $("#production-chart3");
+
+            // Chart Options
+            var chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        gridLines: {
+                            color: "#f3f3f3",
+                            drawTicks: false,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: ''
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        gridLines: {
+                            color: "#f3f3f3",
+                            drawTicks: false,
+                        },
+                        ticks: {
+                            max: 250000,
+                            min: 0,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Oil Production PD (BOPD)'
+                        }
+                    }]
+                },
+                title: {
+                    display: false,
+                    text: 'Chart.js Combo Bar Line Chart'
+                }
+            };
+
+            // Chart Data
+            var chartData = {
+                labels: ["Jan-18", "Feb-18", "Mar-18", "Apr-18", "May-18", "Jun-18", "Jul-18", "Aug-18", "Sept-18", "Oct-18", "Nov-18", "Dec-18"],
+                datasets: [{
+                    type: 'line',
+                    label: "Oil and Gas PD(Base + Uplift)",
+                    data: [227570, 222521, 222806, 197601, 213380, 209105, 204423, 207106, 213015, 207590, 206379, 216488],
+                    backgroundColor: "#fab800",
+                    borderColor: "#fab800",
+                    borderWidth: 2,
+                    pointBorderColor: "#fab800",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 2,
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 4,
+                    fill: false
+                }, {
+                    type: 'line',
+                    label: "Oil and Gas PD(Base + 10% Decline)",
+                    data: [223681, 215850, 212992, 186521, 196977, 197184, 187706, 189184, 183225, 177146, 177319, 180338],
+                    backgroundColor: "#191970",
+                    borderColor: "#FA8E75",
+                    borderWidth: 2,
+                    pointBorderColor: "#FA8E75",
+                    pointBackgroundColor: "#FFF",
+                    pointBorderWidth: 2,
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 4,
+                    fill: true
+                }]
+            };
+
+            var config = {
+                type: 'line',
+
+                // Chart Options
+                options: chartOptions,
+
+                data: chartData
+            };
+
+            // Create the chart
+            var lineChart = new Chart(ctx, config);
+        }
+    </script>
+</body>
+
+</html>
